@@ -1,0 +1,26 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+client_secret*.json
+credentials*.json
+token*.json
+
+# Raw n8n exports (commit only the sanitized versions)
+n8n/workflows/raw/
+
+# Diagnostics output may contain hostnames/IPs
+diagnostics-*.txt
+
+# Desktop app
+desktop/node_modules/
+desktop/dist/
+desktop/src-tauri/target/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
